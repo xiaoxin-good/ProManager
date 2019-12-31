@@ -47,3 +47,18 @@ INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 16:50:10] "GET / HTTP/1.1" 404 
 INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 16:50:11] "GET / HTTP/1.1" 404 -
 INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 16:50:11] "GET / HTTP/1.1" 404 -
 INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 16:50:12] "GET / HTTP/1.1" 404 -
+INFO _internal.py 122  * Restarting with stat
+WARNING _internal.py 122  * Debugger is active!
+INFO _internal.py 122  * Debugger PIN: 276-639-239
+INFO _internal.py 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:22] "GET / HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:22] "GET /static/404/404.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:22] "GET /static/404/spaceman.svg HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:22] "GET /static/404/404.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:23] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:37] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR views.py 8 1
+WARNING views.py 9 2
+INFO views.py 10 3
+DEBUG views.py 11 4
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:39] "GET /abc HTTP/1.1" 200 -
