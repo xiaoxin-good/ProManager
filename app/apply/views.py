@@ -1,7 +1,8 @@
 # _*_ coding:UTF-8
 from . import apply
-from app import db
+from app import db, models
 from flask import current_app
+
 
 @apply.route("/abc")
 def index():

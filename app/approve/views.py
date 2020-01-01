@@ -1,6 +1,6 @@
 # _*_ coding:UTF-8
 from . import approve
-from app import db
+from app import db, models
 from flask import current_app
 
 

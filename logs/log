@@ -62,3 +62,8 @@ WARNING views.py 9 2
 INFO views.py 10 3
 DEBUG views.py 11 4
 INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 17:45:39] "GET /abc HTTP/1.1" 200 -
+INFO _internal.py 122  * Restarting with stat
+WARNING _internal.py 122  * Debugger is active!
+INFO _internal.py 122  * Debugger PIN: 118-890-870
+INFO _internal.py 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py 122 127.0.0.1 - - [31/Dec/2019 19:39:26] "GET / HTTP/1.1" 404 -
