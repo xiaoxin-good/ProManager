@@ -53,11 +53,11 @@ def create_app(config_name):
     CSRFProtect(app)
 
     # 注册蓝图
-    from app.user import index as index_blueprint
+    from app.user import user as user_blueprint
     from app.apply import apply as apply_blueprint
     from app.approve import approve as approve_blueprint
 
-    app.register_blueprint(index_blueprint, url_prefix="/")
+    app.register_blueprint(user_blueprint, url_prefix="/user")
     app.register_blueprint(apply_blueprint, url_prefix="/apply")
     app.register_blueprint(approve_blueprint, url_prefix="/approve")
 
