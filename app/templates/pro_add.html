@@ -1,0 +1,141 @@
+{% extends "index.html" %}
+
+{% block title %}
+    项目管理系统--新增项目计划
+{% endblock %}
+
+{% block work_page_title %}
+    新增项目计划
+{% endblock %}
+
+{% block ext_content %}
+    <form role="form" method="post" enctype="multipart/form-data" id="pro_form">
+
+        {% for msg in get_flashed_messages(category_filter=["OK"]) %}
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×
+                </button>
+                <h4><i class="icon fa fa-check"></i> 操作成功</h4>
+                {{ msg }}
+            </div>
+        {% endfor %}
+
+        {% for msg in get_flashed_messages(category_filter=["err"]) %}
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×
+                </button>
+                <h4><i class="icon fa fa-ban"></i> 操作失败</h4>
+                {{ msg }}
+            </div>
+        {% endfor %}
+
+        <table class="table table-hover">
+            <tr class="form-group">
+                <th>{{ form.proID.label }}</th>
+                <td>
+                    {{ form.proID }}
+                    {% for err in form.proID.errors %}
+                        <div class="col-md-12">
+                            <span style="color:red;">{{ err }}</span>
+                        </div>
+                    {% endfor %}
+                </td>
+
+                <th>{{ form.title.label }}</th>
+                <td>
+                    {{ form.title }}
+                    {% for err in form.title.errors %}
+                        <div class="col-md-12">
+                            <span style="color:red;">{{ err }}</span>
+                        </div>
+                    {% endfor %}
+                </td>
+
+
+            </tr>
+
+            <tr class="form-group">
+                <th>{{ form.type_id.label }}</th>
+                <td>{{ form.type_id }}</td>
+                <th>{{ form.area_id.label }}</th>
+                <td>{{ form.area_id }}</td>
+            </tr>
+
+            <tr class="form-group">
+                <th>{{ form.user_id.label }}</th>
+                <td>{{ form.user_id }}</td>
+                <th>{{ form.phone.label }}</th>
+                <td>{{ form.phone }}</td>
+            </tr>
+            <tr class="form-group">
+                <th>{{ form.start_time1.label }}</th>
+                <td>
+                    {{ form.start_time1 }}
+                    {% for err in form.start_time1.errors %}
+                        <div class="col-md-12">
+                            <span style="color:red;">{{ err }}</span>
+                        </div>
+                    {% endfor %}
+                </td>
+
+                <th>{{ form.start_time2.label }}</th>
+                <td>{{ form.start_time2 }}</td>
+            </tr>
+            <tr class="form-group">
+                <th>{{ form.end_time1.label }}</th>
+                <td>
+                    {{ form.end_time1 }}
+                    {% for err in form.end_time1.errors %}
+                        <div class="col-md-12">
+                            <span style="color:red;">{{ err }}</span>
+                        </div>
+                    {% endfor %}</td>
+                <th>{{ form.end_time2.label }}</th>
+                <td>{{ form.end_time2 }}</td>
+            </tr>
+
+            <tr class="form-group">
+                <th>{{ form.check_id.label }}</th>
+                <td>{{ form.check_id }}</td>
+                <th>{{ form.budget.label }}</th>
+                <td>
+                    {{ form.budget }}
+                    {% for err in form.budget.errors %}
+                        <div class="col-md-12">
+                            <span style="color:red;">{{ err }}</span>
+                        </div>
+                    {% endfor %}
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td class="box-footer" style="float: right">
+                    {{ form.csrf_token }}
+                    {{ form.submit1 }}
+                </td>
+                <td class="box-footer">
+                    <input type="button" value="重置" class="btn btn-primary" onclick="formReset()">
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}
+
+{% block ext_js %}
+    <script>
+        $(document).ready(function () {
+            $('#input_start_time1,#input_start_time2,#input_end_time1,#input_end_time2').datepicker({
+                autoclose: true,
+                format: 'yyyy-mm-dd',
+                language: 'zh-CN',
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function formReset() {
+            document.getElementById("pro_form").reset()
+        }
+    </script>
+{% endblock %}

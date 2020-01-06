@@ -1,0 +1,130 @@
+{% extends "index.html" %}
+{% import 'pro_page.html' as pg %}
+{% block title %}
+    项目管理系统--项目计划列表
+{% endblock %}
+
+{% block work_page_title %}
+    项目计划列表
+{% endblock %}
+
+{% block ext_content %}
+    {% for msg in get_flashed_messages(category_filter=["OK"]) %}
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×
+            </button>
+            <h4><i class="icon fa fa-check"></i> 操作成功</h4>
+            {{ msg }}
+        </div>
+    {% endfor %}
+
+    {% for msg in get_flashed_messages(category_filter=["err"]) %}
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×
+            </button>
+            <h4><i class="icon fa fa-ban"></i> 操作失败</h4>
+            {{ msg }}
+        </div>
+    {% endfor %}
+
+    <div class="box-body table-responsive no-padding">
+        <table class="table table-hover">
+            <tbody>
+            <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>类别</th>
+                <th>省份</th>
+                <th>预计启动时间</th>
+                <th>预计结束时间</th>
+                <th>审批人</th>
+                <th>预算（万元）</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            {% for v in page_data.items %}
+                <tr>
+                    <td>{{ v.pro_id }}</td>
+                    <td>{{ v.name }}</td>
+                    <td>{{ v.type.name }}</td>
+                    <td>{{ v.area.name }}</td>
+                    <td>{{ v.expected_start_time.strftime("%Y-%m-%d") }}</td>
+                    <td>{{ v.expected_completion_time.strftime("%Y-%m-%d") }}</td>
+                    <td>{{ v.check.name }}</td>
+                    <td>{{ v.budget }}</td>
+                    <td>{{ v.status.name }}</td>
+                    <td>
+                        {% if v.status_id ==1 %}
+                            <a href="{{ url_for('apply.pro_edit',id=v.id) }}" class="label label-default">修改</a>
+                            &nbsp;
+                            <a href="" class="label label-success"
+                               data-toggle="modal" data-target="#myModal1">提交</a>
+                            &nbsp;
+                            <a href="" class="label label-danger"
+                               data-toggle="modal" data-target="#myModal2">删除</a>
+
+                            <!-- 提交弹窗start -->
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">操作提示</h4>
+                                        </div>
+                                        <div class="modal-body" style="font-size: 20px;font-family: 微软雅黑">
+                                            确认要提交本项目计划吗？
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <a href="" class="btn btn-default" data-dismiss="modal">取消</a>
+                                            <a href="{{ url_for('apply.pro_commit',id=v.id) }}"
+                                               class="btn btn-success">确认提交</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 提交弹窗end -->
+                            <!-- 删除弹窗start -->
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">操作提示</h4>
+                                        </div>
+                                        <div class="modal-body" style="font-size: 20px;font-family: 微软雅黑">
+                                            确认要删除本项目计划吗？
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <a href="" class="btn btn-default" data-dismiss="modal">取消</a>
+                                            <a href="{{ url_for('apply.pro_del',id=v.id) }}"
+                                               class="btn btn-danger">确认删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 删除弹窗end -->
+                        {% else %}
+                            <a href="{{ url_for('apply.detail',pro_id=v.pro_id) }}" class="label label-default">详情</a>
+                        {% endif %}
+
+                    </td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+    <div class="box-footer clearfix">
+        {{ pg.page(page_data,'apply.pro_list') }}
+    </div>
+{% endblock %}
+
+{% block ext_js %}
+
+{% endblock %}

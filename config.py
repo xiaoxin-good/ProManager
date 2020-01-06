@@ -17,8 +17,8 @@ class Config(object):
     DB_NAME = "promanager"
     CHARSET = "utf8"
 
-    SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset={}".format(DB, DRIVER, NAME, PWD,
-                                                                         HOST, PORT, DB_NAME, CHARSET)
+    SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset={}&autocommit=true".format(DB, DRIVER, NAME, PWD,
+                                                                                         HOST, PORT, DB_NAME, CHARSET)
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     # redis

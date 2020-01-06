@@ -1,0 +1,66 @@
+{% extends "index.html" %}
+
+{% block title %}
+    项目管理系统--项目计划详情
+{% endblock %}
+
+{% block work_page_title %}
+    项目计划详情
+{% endblock %}
+
+{% block ext_content %}
+    <table class="table table-hover">
+        <tr class="form-group">
+            <th>项目编号</th>
+            <td>{{ pro.pro_id }}</td>
+            <th>项目名称</th>
+            <td>{{ pro.name }}</td>
+        </tr>
+        <tr class="form-group">
+            <th>所属类别</th>
+            <td>{{ pro.type.name }}</td>
+            <th>承担省份</th>
+            <td>{{ pro.area.name }}</td>
+        </tr>
+
+        <tr class="form-group">
+            <th>负责人</th>
+            <td>{{ pro.user_id }}</td>
+            <th>联系电话</th>
+            <td>{{ pro.phone }}</td>
+        </tr>
+        <tr class="form-group">
+            <th>预计启动时间</th>
+            <td>{{ pro.expected_start_time.strftime("%Y-%m-%d") }}</td>
+            <th>实际启动时间</th>
+            <td>{{ pro.actual_strat_time.strftime("%Y-%m-%d") }}</td>
+        </tr>
+        <tr class="form-group">
+            <th>预计结束时间</th>
+            <td>{{ pro.expected_completion_time.strftime("%Y-%m-%d") }}</td>
+            <th>实际结束时间</th>
+            <td>{{ pro.actual_completion_time.strftime("%Y-%m-%d") }}</td>
+        </tr>
+
+        <tr class="form-group">
+            <th>审核人</th>
+            <td>{{ pro.check.name }}</td>
+            <th>总预算（万元）</th>
+            <td>{{ pro.budget }}</td>
+        </tr>
+        <tr class="form-group">
+            <th>状态</th>
+            <td>{{ pro.status.name }}</td>
+            <th>添加时间</th>
+            <td>{{ pro.addtime }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="box-footer" style="float: right">
+                <a href="{{ url_for("apply.pro_list",page=1) }}" class="btn btn-default">
+                    返回
+                </a>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
