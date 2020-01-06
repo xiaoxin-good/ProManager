@@ -663,3 +663,236 @@ INFO _internal.py 122  * Restarting with stat
 WARNING _internal.py 122  * Debugger is active!
 INFO _internal.py 122  * Debugger PIN: 320-818-317
 INFO _internal.py 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\decorations.py', reloading
+INFO _internal.py 122  * Restarting with stat
+WARNING _internal.py 122  * Debugger is active!
+INFO _internal.py 122  * Debugger PIN: 320-818-317
+INFO _internal.py 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\decorations.py', reloading
+INFO _internal.py 122  * Restarting with stat
+WARNING _internal.py 122  * Debugger is active!
+INFO _internal.py 122  * Debugger PIN: 320-818-317
+INFO _internal.py 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:12] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:20:48] "GET /user/addtype/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:01] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:21:40] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "POST /user/login HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "GET /user/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "GET /user/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "GET /user/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "GET /user/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "GET /user/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:29:40] "GET /user/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:21] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:22] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:27] "GET /user/logout/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:28] "GET /user/login HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:28] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:32:41] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:35] "GET /user/login HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:35] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:37] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:37] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:40] "GET /user/addtype/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:40] "GET /user/login?next=http%3A%2F%2F127.0.0.1%3A5000%2Fuser%2Faddtype%2F HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:40] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:47] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:47] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:52] "GET /user/addtype/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:52] "GET /user/login?next=http%3A%2F%2F127.0.0.1%3A5000%2Fuser%2Faddtype%2F HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:52] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:58] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:34:58] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:13] "GET /apply/pro/add/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:13] "GET /user/login?next=http%3A%2F%2F127.0.0.1%3A5000%2Fapply%2Fpro%2Fadd%2F HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:13] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\decorations.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:50] "GET /user/login?next=http%3A%2F%2F127.0.0.1%3A5000%2Fapply%2Fpro%2Fadd%2F HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:50] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:50] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:53] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:53] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:35:56] "GET /user/addtype/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:00] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:05] "GET /user/logout/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:05] "GET /user/logout/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:05] "GET /user/logout/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:05] "GET /user/logout/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:06] "GET /user/logout/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:06] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:36:06] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:38:40] "GET /user/logout/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:38:40] "GET /user/logout/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:38:40] "GET /user/logout/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:38:40] "GET /user/logout/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:38:41] "GET /user/logout/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:38:41] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:04] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:10] "GET /user/logout/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:10] "GET /user/logout/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:10] "GET /user/logout/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:10] "GET /user/logout/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:10] "GET /user/logout/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:10] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:48] "GET /user/logout/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:48] "GET /user/login HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:39:48] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:18] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:18] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:23] "GET /user/logout/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:23] "GET /user/login HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:23] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:30] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:30] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:40:39] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:41:59] "GET /user/logout/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:41:59] "GET /user/login HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:41:59] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:45:11] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:45:11] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:45:17] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:15] "GET /apply/pro/add/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:15] "GET /apply/pro/add/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:15] "GET /apply/pro/add/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:15] "GET /apply/pro/add/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:15] "GET /apply/pro/add/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:15] "GET /apply/pro/add/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:46:16] "GET /apply/pro/add/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:49:50] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:17] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:17] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:19] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:19] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:20] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:20] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:49] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:50:49] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:51:18] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:51:18] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\user\\views.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:55:14] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:55:14] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:12] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:13] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:46] "GET /user/logout/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:46] "GET /user/logout/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:46] "GET /user/logout/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:46] "GET /user/logout/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:46] "GET /user/logout/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:46] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:56:47] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:08] "GET /user/logout/ HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:08] "GET /user/logout/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:08] "GET /user/logout/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:08] "GET /user/logout/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:08] "GET /user/logout/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:08] "GET /user/logout/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:26] "GET /user/addtype/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:30] "GET /user/login HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:30] "GET /static/bbase/css/bootstrap-movie.css HTTP/1.1" 404 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:52] "POST /user/login HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:57:52] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 16:58:05] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122  * Detected change in 'E:\\FlaskProjects\\ProManager\\app\\models.py', reloading
+INFO _internal.py 122  * Restarting with stat
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:02:44] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:02:44] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:02:48] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:02:54] "GET /apply/pro/list/2/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:02:55] "GET /apply/pro/list/3/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:02:55] "GET /apply/pro/list/4/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:03:13] "GET /apply/pro/list/3/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:03:15] "GET /apply/pro/list/2/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:03:16] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:03:48] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:03:48] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:03:52] "GET /apply/pro/edit/20/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:09] "POST /apply/pro/edit/20/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:09] "GET /apply/pro/edit/20/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:17] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:33] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:38] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:43] "GET /apply/pro/commit/20/ HTTP/1.1" 302 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:43] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:48] "GET /apply/pro/list/2/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:49] "GET /apply/pro/list/3/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:50] "GET /apply/pro/list/4/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:04:51] "GET /apply/pro/list/1/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:07:01] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:07:40] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:07:40] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:10] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:10] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:11] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:12] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:12] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:12] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:22] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:22] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:22] "GET /apply/pro/detail/1007/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:23] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:08:45] "GET /user/addtype/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:09:27] "GET /apply/pro/add/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:09:41] "GET /user/addtype/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "POST /user/addtype HTTP/1.1" 500 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "GET /user/addtype?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "GET /user/addtype?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "GET /user/addtype?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "GET /user/addtype?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "GET /user/addtype?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:11:39] "GET /user/addtype?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:13:01] "GET /user/addtype/ HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:13:01] "GET /static/base/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py 122 127.0.0.1 - - [06/Jan/2020 17:13:09] "POST /user/addtype/ HTTP/1.1" 200 -

@@ -3,10 +3,8 @@ from app.models import User, Position, Type
 from app.user.decorations import login_require
 
 from . import user
-from app import db, models
-from flask import current_app, render_template, request, redirect, Flask, session, Response, url_for
-import json
-import jsonpickle
+from app import db
+from flask import render_template, request, redirect, session, url_for
 
 
 @user.route("/register/", methods=["GET", "POST"])
@@ -85,7 +83,11 @@ def login():
             # 正则表达式判断是用户名，邮箱，手机
             # if re
             # 存储session
-            session["user"] = jsonpickle.dumps(user)
+            session["username"] = user.name
+            session["userid"] = user.id
+            session["userworkid"] = user.work_id
+            session["userpositon"]=user.position_id
+            session["userphone"] = user.phone
         # 存储cookie
 
         response = redirect(url_for("user.index"))
@@ -104,24 +106,25 @@ def login():
 @login_require
 @user.route("/")
 def index():
-    user = session.get('user')
-    user = jsonpickle.loads(user)
-    return render_template('index.html', user=user)
+    return render_template('index.html')
 
 
 @user.route("/logout/")
 def logout():
-    session.pop('user')
+    session.pop('username')
+    session.pop('userid')
+    session.pop('userworkid')
+    session.pop('userpositon')
+    session.pop("userphone")
     return redirect(url_for(("user.login")))
+
 
 
 @user.route("/addtype/", methods=["POST", "GET"])
 @login_require
 def addtype():
     if request.method == "GET":
-        user = session.get('user')
-        user = jsonpickle.loads(user)
-        return render_template('addtype.html', user=user)
+        return render_template('addtype.html')
     else:
         # 接收数据
         # typeid=request.form.get('typeid')

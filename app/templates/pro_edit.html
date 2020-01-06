@@ -60,7 +60,8 @@
 
             <tr class="form-group">
                 <th>{{ form.user_id.label }}</th>
-                <td>{{ form.user_id(value=pro.user_id) }}</td>
+                <td><input readonly type="text" class="form-control" id="input_area" value="{{ session["username"] }}">
+                </td>
                 <th>{{ form.phone.label }}</th>
                 <td>{{ form.phone(value=pro.phone) }}</td>
             </tr>

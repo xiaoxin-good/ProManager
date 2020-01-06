@@ -1,4 +1,7 @@
 # _*_ coding:UTF-8
+import jsonpickle
+from wtforms.ext.csrf import session
+
 from app.apply.forms import ProForm
 from app.models import Area, AddPro, Type, User, Status
 from app.user.decorations import login_require
@@ -33,7 +36,7 @@ def pro_add():
             name=data["title"],
             type_id=data["type_id"],
             area_id=data["area_id"],
-            user_id=data["user_id"],
+            user_id=session["userid"],
             phone=data["phone"],
             expected_start_time=data["start_time1"],
             actual_strat_time=data["start_time2"],
@@ -131,6 +134,7 @@ def pro_del(id=None):
     db.session.commit()
     flash("删除项目成功！", "OK")
     return redirect(url_for("apply.pro_list", page=1))
+
 
 # 项目计划详情页
 @apply.route("/pro/detail/<string:pro_id>/")

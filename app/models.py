@@ -74,7 +74,6 @@ class AddPro(db.Model):
     id = db.Column(db.Integer, primary_key=True)  # 编号
     pro_id = db.Column(db.String(100), unique=True)  # 项目编号
     type_id = db.Column(db.Integer, db.ForeignKey("type.id"))  # 所属项目类型
-    # user_id = db.Column(db.Integer, db.ForeignKey("user.id"))  # 所属用户
     user_id = db.Column(db.Integer)
     name = db.Column(db.String(100), unique=True)  # 项目名称
     area_id = db.Column(db.Integer, db.ForeignKey("area.id"))  # 所属省份

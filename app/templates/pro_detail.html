@@ -25,7 +25,7 @@
 
         <tr class="form-group">
             <th>负责人</th>
-            <td>{{ pro.user_id }}</td>
+            <td>{{ session["username"] }}</td>
             <th>联系电话</th>
             <td>{{ pro.phone }}</td>
         </tr>
@@ -57,7 +57,7 @@
         <tr>
             <td></td>
             <td class="box-footer" style="float: right">
-                <a href="{{ url_for("apply.pro_list",page=1) }}" class="btn btn-default">
+                <a href="{{ url_for("apply.pro_list",page=1) }}" class="btn btn-default" style="float: left">
                     返回
                 </a>
             </td>
