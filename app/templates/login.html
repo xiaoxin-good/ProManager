@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
     <title>登陆</title>
-    <link rel="shortcut icon" href="./static/base/images/logo.png">
-    <link rel="stylesheet" href="./static/base/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/base/css/bootstrap-movie.css">
-    <link rel="stylesheet" href="./static/base/css/animate.css">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='base/images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='base/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='bbase/css/bootstrap-movie.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='base/css/animate.css') }}">
     <style>
-        .navbar-brand>img {
+        .navbar-brand > img {
             display: inline;
         }
 
     </style>
     <style>
-        .media{
-            padding:3px;
-            border:1px solid #ccc
+        .media {
+            padding: 3px;
+            border: 1px solid #ccc
         }
 
     </style>
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.html" class="navbar-brand" style="width:250px;">
-                <img src="./static/base/images/logo.png" style="height:30px;">&nbsp;项目管理系统
+                <img src="{{ url_for('static',filename='base/images/logo.png') }}" style="height:30px;">&nbsp;项目管理系统
             </a>
         </div>
     </div>
@@ -53,19 +53,29 @@
                     <h3 class="panel-title"><span class="glyphicon glyphicon-log-in"></span>&nbsp;用户登录</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form role="form" action="/user/login" method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                         <fieldset>
                             <div class="form-group">
-                                <label for="input_contact"><span class="glyphicon glyphicon-user"></span>&nbsp;账号</label>
-                                <input id="input_contact" class="form-control input-lg" placeholder="用户名/邮箱/手机号码" name="contact" type="text" autofocus>
+                                <label for="input_contact"><span
+                                        class="glyphicon glyphicon-user"></span>&nbsp;账号</label>
+                                <input id="input_contact" class="form-control input-lg" placeholder="用户名/邮箱/手机号码"
+                                       name="contact" type="text" value="{{ contact }}" autofocus>
                             </div>
                             <div class="col-md-12" id="error_contact"></div>
                             <div class="form-group">
-                                <label for="input_password"><span class="glyphicon glyphicon-lock"></span>&nbsp;密码</label>
-                                <input id="input_password" class="form-control input-lg" placeholder="密码" name="password" type="password" value="">
+                                <label for="input_password"><span
+                                        class="glyphicon glyphicon-lock"></span>&nbsp;密码</label>
+                                <input id="input_password" class="form-control input-lg" placeholder="密码"
+                                       name="password" type="password" value="{{ pwd }}">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember" checked="{{ checked }}">
+                                <label>记住用户名</label>
+                                <a href={{ url_for("user.register") }}>注册</a>
                             </div>
                             <div class="col-md-12" id="error_password"></div>
-                            <a href="user.html" class="btn btn-lg btn-success btn-block">登录</a>
+                            <input type="submit" class="btn btn-lg btn-success btn-block" value="登录">
                         </fieldset>
                     </form>
                 </div>
@@ -87,20 +97,20 @@
     </div>
 </footer>
 <!--底部-->
-<script src="./static/base/js/jquery.min.js"></script>
-<script src="./static/base/js/bootstrap.min.js"></script>
-<script src="./static/base/js/jquery.singlePageNav.min.js"></script>
-<script src="./static/base/js/wow.min.js"></script>
-<script src="./static/lazyload/jquery.lazyload.min.js"></script>
+<script src="{{ url_for('static',filename='base/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='base/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename='base/js/jquery.singlePageNav.min.js') }}"></script>
+<script src="{{ url_for('static',filename='base/js/wow.min.js') }}"></script>
+<script src="{{ url_for('static',filename='lazyload/jquery.lazyload.min.js') }}"></script>
 <script src="//cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
 <script>
-    $(function() {
+    $(function () {
         new WOW().init();
     })
 
 </script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("img.lazy").lazyload({
             effect: "fadeIn"
         });

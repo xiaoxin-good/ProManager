@@ -19,7 +19,8 @@ class Config(object):
 
     SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset={}&autocommit=true".format(DB, DRIVER, NAME, PWD,
                                                                                          HOST, PORT, DB_NAME, CHARSET)
-    SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # redis
     REDIS_HOST = "192.168.48.135"

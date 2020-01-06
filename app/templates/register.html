@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
     <title>注册</title>
-    <link rel="shortcut icon" href="/static/base/images/logo.png">
-    <link rel="stylesheet" href="./static/base/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/base/css/bootstrap-movie.css">
-    <link rel="stylesheet" href="./static/base/css/animate.css">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='base/images/logo.pn') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='base/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='base/css/bootstrap-movie.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='base/css/animate.css') }}">
     <style>
-        .navbar-brand>img {
+        .navbar-brand > img {
             display: inline;
         }
 
     </style>
     <style>
-        .media{
-            padding:3px;
-            border:1px solid #ccc
+        .media {
+            padding: 3px;
+            border: 1px solid #ccc
         }
 
     </style>
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.html" class="navbar-brand" style="width:250px;">
-                <img src="./static/base/images/logo.png" style="height:30px;">&nbsp;微电影
+                <img src="{{ url_for('static',filename='base/images/logo.png') }}" style="height:30px;">&nbsp;项目管理系统
             </a>
         </div>
     </div>
@@ -53,36 +53,67 @@
                     <h3 class="panel-title"><span class="glyphicon glyphicon-plus"></span>&nbsp;用户注册</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form role="form"  action="/user/register/" method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                         <fieldset>
                             <div class="form-group">
+                                <label for="input_workid"><span class="glyphicon glyphicon-user"></span>&nbsp;工号</label>
+                                <input id="input_workid" class="form-control input-lg" placeholder="工号" name="workid"
+                                       type="text" autofocus>
+                            </div>
+                            <div class="col-md-12" id="error_workid"></div>
+                            <div class="form-group">
                                 <label for="input_name"><span class="glyphicon glyphicon-user"></span>&nbsp;姓名</label>
-                                <input id="input_name" class="form-control input-lg" placeholder="昵称" name="name" type="text" autofocus>
+                                <input id="input_name" class="form-control input-lg" placeholder="姓名" name="name"
+                                       type="text" autofocus>
                             </div>
                             <div class="col-md-12" id="error_name"></div>
                             <div class="form-group">
-                                <label for="input_email"><span class="glyphicon glyphicon-envelope"></span>&nbsp;邮箱</label>
-                                <input id="input_email" class="form-control input-lg" placeholder="邮箱" name="email" type="email" autofocus>
+                                <label for="input_email"><span
+                                        class="glyphicon glyphicon-envelope"></span>&nbsp;邮箱</label>
+                                <input id="input_email" class="form-control input-lg" placeholder="邮箱" name="email"
+                                       type="email" autofocus>
                             </div>
                             <div class="col-md-12" id="error_email"></div>
                             <div class="form-group">
                                 <label for="input_phone"><span class="glyphicon glyphicon-phone"></span>&nbsp;手机</label>
-                                <input id="input_phone" class="form-control input-lg" placeholder="手机" name="phone" type="text" autofocus>
+                                <input id="input_phone" class="form-control input-lg" placeholder="手机" name="phone"
+                                       type="text" autofocus>
                             </div>
                             <div class="col-md-12" id="error_phone"></div>
                             <div class="form-group">
-                                <label for="input_password"><span class="glyphicon glyphicon-lock"></span>&nbsp;密码</label>
-                                <input id="input_password" class="form-control input-lg" placeholder="密码" name="password" type="password" value="">
+                                <p>
+                                    <label for="input_phone"><span
+                                            class="glyphicon glyphicon-phone"></span>&nbsp;职位</label><br>
+                                    <select class="form-control input-lg" name="position_id">
+                                        {% for position in positions %}
+                                            <option value="{{ position.id }}">{{ position.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="col-md-12" id="error_phone"></div>
+                            <div class="form-group">
+                                <label for="input_password"><span
+                                        class="glyphicon glyphicon-lock"></span>&nbsp;密码</label>
+                                <input id="input_password" class="form-control input-lg" placeholder="密码"
+                                       name="password" type="password" value="">
                             </div>
                             <div class="col-md-12" id="error_password"></div>
                             <div class="form-group">
-                                <label for="input_repassword"><span class="glyphicon glyphicon-lock"></span>&nbsp;确认密码</label>
-                                <input id="input_repassword" class="form-control input-lg" placeholder="确认密码" name="repassword" type="password" value="">
+                                <label for="input_repassword"><span
+                                        class="glyphicon glyphicon-lock"></span>&nbsp;确认密码</label>
+                                <input id="input_repassword" class="form-control input-lg" placeholder="确认密码"
+                                       name="repassword" type="password" value="">
                             </div>
                             <div class="col-md-12" id="error_repassword"></div>
-                            <a href="user.html" class="btn btn-lg btn-success btn-block">注册</a>
+                            <div class="form-group">
+                                <p>已经注册? <a href="{{ url_for("user.login") }}">登陆</a></p>
+                            </div>
+                            <input type="submit" class="btn btn-lg btn-success btn-block" value="注册">
                         </fieldset>
                     </form>
+                {{ msg }}
                 </div>
             </div>
         </div>
@@ -102,20 +133,20 @@
     </div>
 </footer>
 <!--底部-->
-<script src="./static/base/js/jquery.min.js"></script>
-<script src="./static/base/js/bootstrap.min.js"></script>
-<script src="./static/base/js/jquery.singlePageNav.min.js"></script>
-<script src="./static/base/js/wow.min.js"></script>
-<script src="./static/lazyload/jquery.lazyload.min.js"></script>
+<script src="{{ url_for('static',filename='base/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='base/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename='base/js/jquery.singlePageNav.min.js') }}"></script>
+<script src="{{ url_for('static',filename='base/js/wow.min.js') }}"></script>
+<script src="{{ url_for('static',filename='lazyload/jquery.lazyload.min.js') }}"></script>
 <script src="//cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
 <script>
-    $(function() {
+    $(function () {
         new WOW().init();
     })
 
 </script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("img.lazy").lazyload({
             effect: "fadeIn"
         });

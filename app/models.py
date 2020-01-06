@@ -17,11 +17,11 @@ class User(db.Model):
     phone = db.Column(db.String(11), unique=True)  # 手机
     face = db.Column(db.String(255), unique=True)  # 头像
     status = db.Column(db.Integer, default=1)  # 激活状态，默认激活，状态为1
-    position_id = db.Column(db.Integer, db.ForeignKey("position.id"))  # 所属职位
+    # position_id = db.Column(db.Integer, db.ForeignKey("position.id"))  # 所属职位
+    position_id = db.Column(db.Integer, default=1)
     addtime = db.Column(db.DateTime, index=True, default=datetime.now)  # 添加时间
-    position_name = db.relationship("Position")  # 职位外键关系关联
 
-
+    # position_name = db.relationship("Position")  # 职位外键关系关联
 
 
     def __repr__(self):
@@ -39,8 +39,12 @@ class Position(db.Model):
     name = db.Column(db.String(100), unique=True)  # 职位名称
     grade = db.Column(db.Integer, unique=True)  # 职位等级
 
-    def __repr__(self):
-        return "<Position {}>".format(self.name)
+
+# users = db.relationship("User", backref="position")  # 用户外键关系关联
+
+
+def __repr__(self):
+    return "<Position {}>".format(self.name)
 
 
 class Type(db.Model):
@@ -71,7 +75,7 @@ class AddPro(db.Model):
     pro_id = db.Column(db.String(100), unique=True)  # 项目编号
     type_id = db.Column(db.Integer, db.ForeignKey("type.id"))  # 所属项目类型
     # user_id = db.Column(db.Integer, db.ForeignKey("user.id"))  # 所属用户
-    user_id= db.Column(db.Integer)
+    user_id = db.Column(db.Integer)
     name = db.Column(db.String(100), unique=True)  # 项目名称
     area_id = db.Column(db.Integer, db.ForeignKey("area.id"))  # 所属省份
     phone = db.Column(db.String(11))  # 联系电话
@@ -87,6 +91,7 @@ class AddPro(db.Model):
     area = db.relationship("Area")  # 省份外键关系关联
     status = db.relationship("Status")  # 状态外键关系关联
     check = db.relationship("User")  # 审批人外键关系关联
+
     # user = db.relationship("User",foreign_keys="user_id",extend_existing=True)
 
     def __repr__(self):

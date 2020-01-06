@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+{% block title %}
+    添加项目类别
+{% endblock %}
+{% block ext_content %}
+        <form role="form" action="/user/addtype" method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+            <table class="table table-hover">
+                <tr class="form-group">
+                    <th style="width: 30%"></th>
+                    <th for="input_title" style="width: 10%">项目类别编号</th>
+                    <td><input type="text" class="form-control" id="input_title" placeholder="请输入项目类别编号" name="typeid"></td>
+                    <th style="width: 30%"></th>
+                </tr>
+                <tr class="form-group">
+                    <th style="width: 30%"></th>
+                    <th for="input_title" style="width: 10%">项目类别名称</th>
+                    <td><input type="text" class="form-control" id="input_title" placeholder="请输入项目类别名称" name="typename"></td>
+                    <th style="width: 30%"></th>
+                </tr>
+                <tr >
+                    <th style="width: 30%"></th>
+                    <th style="width: 10%"></th>
+                    <td class="box-footer">
+                        <button type="submit" class="btn btn-primary">添加</button>
+                    </td>
+                    <th style="width: 30%"></th>
+                </tr>
+            </table>
+        </form>
+
+{% endblock %}

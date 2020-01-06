@@ -1,6 +1,7 @@
 # _*_ coding:UTF-8
 from app.apply.forms import ProForm
 from app.models import Area, AddPro, Type, User, Status
+from app.user.decorations import login_require
 from . import apply
 from app import db
 from flask import render_template, flash, redirect, url_for, request
@@ -8,6 +9,7 @@ from flask import render_template, flash, redirect, url_for, request
 
 # 新增项目计划
 @apply.route("/pro/add/", methods=["get", "post"])
+@login_require
 def pro_add():
     form = ProForm()
 
@@ -50,6 +52,7 @@ def pro_add():
 
 # 项目计划列表
 @apply.route("/pro/list/<int:page>/", methods=["get", "post"])
+@login_require
 def pro_list(page=None):
     if page is None:
         page = 1
